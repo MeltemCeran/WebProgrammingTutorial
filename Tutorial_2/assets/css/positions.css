@@ -1,0 +1,200 @@
+body {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: cornsilk;
+}
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: #eadbc8;
+  position: relative;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  align-content: center;
+  /* display: inline-block; */
+  font-size: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 2s;
+}
+
+.box:hover {
+  cursor: zoom-in;
+  /* width: 100px;
+    height: 100px; */
+  transform: scale(2, 2) translate(-25%, -25%);
+}
+
+.box:hover span {
+  z-index: 3;
+  letter-spacing: 5px;
+  animation: textChange 5s;
+}
+
+@keyframes textChange {
+  0% {
+    letter-spacing: 5px;
+  }
+  25% {
+    letter-spacing: 7px;
+  }
+  50% {
+    letter-spacing: 9px;
+  }
+  75% {
+    letter-spacing: 11px;
+  }
+  100% {
+    letter-spacing: 13px;
+    background-color: #155263;
+  }
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: cornsilk;
+  font-weight: bold;
+}
+
+.f-left {
+  float: left;
+}
+.f-Right {
+  float: right;
+}
+
+.m-5 {
+  margin: 0px;
+}
+.m-10 {
+  margin: 10px;
+}
+.m-15 {
+  margin: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+.m-25 {
+  margin: 25px;
+}
+
+.lt {
+  left: 0;
+  top: 0;
+}
+.lc {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.lb {
+  left: 0;
+  bottom: 0;
+}
+
+.mt {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+.mc {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.mb {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+.rt {
+  right: 0;
+  top: 0;
+}
+.rc {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.rb {
+  right: 0;
+  bottom: 0;
+}
+
+.bg-color-lightorange {
+  background-color: #ffc93c;
+}
+.bg-color-orange {
+  background-color: #ff9a3c;
+}
+.bg-color-hardorange {
+  background-color: #ff6f3c;
+}
+
+.color-whitesmoke {
+  color: whitesmoke;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-sticky {
+  position: sticky;
+}
+.position-static {
+  position: static;
+}
+
+#box-1 {
+}
+#box-2 {
+}
+#box-3:hover {
+  transform: scale(2, 2) translate(25%, -25%);
+}
+#box-4 {
+}
+#box-5 {
+}
+#box-6:hover {
+  transform: scale(2, 2) translate(25%, -25%);
+}
+#box-7:hover {
+  transform: scale(2, 2) translate(-25%, 25%);
+}
+#box-8:hover {
+  transform: scale(2, 2) translate(-25%, 25%);
+}
+#box-9:hover {
+  transform: scale(2, 2) translate(25%, 25%);
+}
