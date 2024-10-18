@@ -1,0 +1,80 @@
+/* tagName{}=> tag üzerinden elemanı yakalarız. Bu çok eleman yakalar.
+.className{}=> Bu tagında class özelliğinde bu değeri olan ya da olanlara etki eder. Kontrol edilebilir.
+#tagId{}=> Bu ise bir tek eleman üzerinde yakalar ve ona etki eder. O yüzden ıdler unique olmalı
+#tagId[attribute=value]{} Bu tagın attribute value değerine sahip olanlar için etki yaratır*/
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: #ead196;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #bf3131;
+  color: #f3edc8;
+  text-align: center;
+  align-content: center;
+  border: 1px solid #f3edc8;
+  box-sizing: border-box;
+}
+
+/* .item-5
+{
+    order: 1;
+    flex-grow: 1;
+}
+.item-3
+{
+    order: 2;
+    flex-grow: 1;
+}
+.item-7
+{
+    order: 3;
+    flex-grow: 1;
+}
+.item-2
+{
+    order: 4;
+    flex-grow: 1;
+} */
+.item-10 {
+  flex-grow: 4;
+}
+
+/* .cotainer-flex
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: chocolate;
+}
+ 
+.kutu
+{
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    color: whitesmoke;
+    font-size: 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+} */
+
+/* .oge-1{background-color: blue; flex-grow: 1;}
+.oge-2{background-color: red; flex-grow: 5;}
+.oge-3{background-color: green; flex-grow: 1;} */
+
+/* .oge-1{background-color: blue; }
+.oge-2{background-color: red; flex-shrink: 2;}
+.oge-3{background-color: green; } */
+
+/* .kutu:nth-of-type(1){flex-shrink: 3;} */
